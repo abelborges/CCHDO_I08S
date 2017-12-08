@@ -7,7 +7,7 @@ check paper with DOI 10.1126/sciadv.1601426.
 
 # On building `ctd_data.csv`
 
-In scripts, it is supposed that the data were downloaded using the "exchange"
+The scripts suppose that the data were downloaded using the "exchange"
 version in the "ctd" section of the CCHDO data repo and unzipped into folders
 `~/goship/1994`, `~/goship/2007` and `~/goship/2016`.
 
