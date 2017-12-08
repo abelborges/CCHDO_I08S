@@ -1,5 +1,9 @@
 # CCHDO_I08S
-Data files from I08S CCHDO 1994, 2007 and 2016 expeditions (https://cchdo.ucsd.edu/search?q=I08S) merged in one long-format csv.
+Data files from I08S CCHDO 1994, 2007 and 2016 expeditions (https://cchdo.ucsd.edu/search?q=I08S)
+merged in one long-format csv.
+The data file is `ctd_data.csv`.
+For more information on its content and an analysis,
+check paper with DOI 10.1126/sciadv.1601426.
 
 # On building `ctd_data.csv`
 
