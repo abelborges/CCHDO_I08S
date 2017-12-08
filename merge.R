@@ -52,24 +52,4 @@ files_2016 <- cbind(files_2016, year)
 # merging
 ctd <- rbind(files_1994, files_2007, files_2016)
 
-library(leaflet)
-library(KernSmooth)
-library(data.table)
-
-kde <- bkde2D(ctd[ ,list(lon, lat)],
-              bandwidth=c(.0045, .0068), gridsize = c(100,100))
-CL <- contourLines(kde$x1 , kde$x2 , kde$fhat)
-
-LEVS <- as.factor(sapply(CL, `[[`, "level"))
-NLEV <- length(levels(LEVS))
-
-## CONVERT CONTOUR LINES TO POLYGONS
-pgons <- lapply(1:length(CL), function(i)
-  Polygons(list(Polygon(cbind(CL[[i]]$x, CL[[i]]$y))), ID=i))
-spgons = SpatialPolygons(pgons)
-
-## Leaflet map with polygons
-leaflet(spgons) %>% addTiles() %>% 
-  addPolygons(color = heat.colors(NLEV, NULL)[LEVS])
-
-
+write.csv(ctd, '~/goship/ctd_data.csv', row.names = FALSE)
