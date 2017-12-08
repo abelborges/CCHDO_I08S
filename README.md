@@ -16,6 +16,6 @@ The columns of interest are 1st (pressure), 3rd (temperature), 5th (salinity) an
 Such commands save the tables on files starting with `new_*` and ending with the name of the original file name.
 
 Coordinates for each file were obtained with the scripts in the `coordinates`
-folder and merged into one file with `wide2long.R` R script.
+folder and merged into `lat_lon.csv` with the `wide2long.R` R script.
 
 Finally, `merge.R` builds the `ctd_data.csv` file.
