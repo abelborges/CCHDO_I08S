@@ -6,6 +6,8 @@ For more information on its content and an analysis,
 check paper with DOI 10.1126/sciadv.1601426.
 
 # On building `ctd_data.csv`
+(For now, this section is actually for myself,
+so that I remember how I came up with this file.)
 
 The scripts suppose that the data were downloaded using the "exchange"
 version in the "ctd" section of the CCHDO data repo and unzipped into folders
